@@ -19,7 +19,7 @@ public class ChuckNorrisJokeController {
 
     @RequestMapping({"/",""})
     public String getJoke(Model model) {
-        model.addAttribute("joke",chuckNorrisJokeService.getQuote());
+        model.addAttribute("joke",chuckNorrisJokeService.getJoke());
         return "index";
     }
 }
